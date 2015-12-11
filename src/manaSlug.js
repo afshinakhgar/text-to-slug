@@ -25,14 +25,23 @@
 
             return str;
         }
+        var rand = Math.floor((Math.random() * 1000) + 1);
 
-        this.on('keyup',function(){
-            val = string_to_slug($(this).val());
+
+        function setVal(obj)
+        {
+            val = string_to_slug(obj.val());
             $('input:hidden#slug-hidden').val(val).blur();
             //$('input:hidden#slug-hidden').attr('value',val);
             //$(this).val(val);
-            $('#slug-display').html(val);
+            $('#slug-display'+rand).html(val);
+        }
+
+
+        this.on('keyup',function(){
+            setVal($(this));
         });
+        
 
         if(settings.output_format == 'form'){
             $('<input />', {
@@ -41,16 +50,15 @@
                 'name' : settings.input_name,
                 'class':'slug-hidden'
             }).insertAfter(this);
-
-
-            $( "<span id='slug-display'></span>" ).insertAfter(this);
-
-            
+            $( "<span id='slug-display"+rand+"' class='slug-display'></span>" ).insertAfter(this);
+            setVal($(this));
 
         }else if(settings.output_format == 'form'){
+            setVal($(this));
+
             return val;
         }
-        
+
         this.css( "color",settings.slug_color );
         return this;
     };
