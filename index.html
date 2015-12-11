@@ -8,11 +8,62 @@
 				$('#slug_tmp').manaSlug();	
 			});
 		</script>
+
+		<style>
+			h1,h2,h3,h4{
+				margin: 0px;
+			}
+			body,u,html,p,li{
+				margin: 0px ; padding: 0px;
+			}
+			.wrapper{
+				width: 980px;
+				margin: 0px auto;	
+				border: 1px solid #e2e2e2;
+				background-color: #80BDED;
+			}
+
+			.manaSlug__header{
+				background-color: #F26748;
+			}
+			.manaSlug__header-title{
+				padding: 30px;
+				text-align: center;
+				color: #
+			}
+			.desc {
+				padding: 20px 5px;	
+
+			}
+			.demo{
+				margin: 20px 5px;
+				border-top: 2px dashed #333;
+				padding:8px 0px;
+			}
+		</style>
 	</head>
 	
 	<body>
-		<form action="send.php">
-			<input type="text" name="slug_tmp" id="slug_tmp">
-		</form>
+		<div class="wrapper">
+			<header class="manaSlug__header">
+				<h1 class="manaSlug__header-title">ManaSlug</h1>
+			</header>
+			
+			<div class="desc">
+				<b>manaSlug</b>  is a neat and small jquery plugin for making slugable input in a form
+			</div>
+
+			<div class="demo">
+				<h3>Demo #1</h3>
+				<form action="send.php">
+					<input type="text" name="slug_tmp" id="slug_tmp">
+				</form>
+
+				$(function(){
+					$('#slug_tmp').manaSlug();	
+				});
+
+			</div>
+		</div>
 	</body>
 </html>
