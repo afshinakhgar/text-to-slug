@@ -38,5 +38,5 @@ Afshin Akhgar , afshin@akhgar.net
 > [akhgar.net](http://akhgar.net)
 
 # License
-
+The source files are distributed under the The MIT License (MIT).
 
