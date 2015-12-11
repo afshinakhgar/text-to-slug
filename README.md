@@ -29,10 +29,14 @@ $(function(){
 ```
 
 
-#Requests or bugs?
+# Requests or bugs?
 [Issues](https://github.com/afshinpersian/manaSlug/issues)
 [Pull Requests](https://github.com/afshinpersian/manaSlug/pulls)
 
-#AUTHOR
+# Author
 Afshin Akhgar , afshin@akhgar.net
 > [akhgar.net](http://akhgar.net)
+
+# License
+
+
