@@ -18,7 +18,7 @@ manaSlug is a neat and small jquery plugin for making slugable input in a form
 >
 >
 ### live Demo
-> [Live Demo](http://akhgar.net/demo/manaslug/index.html){:target="_blank"}
+> [Live Demo](http://akhgar.net/demo/manaslug/index.html)
 
 ```
 <script src="src/jquery.min.js"></script>
@@ -36,12 +36,12 @@ $(function(){
 
 
 ## Requests or bugs?
-* [Issues](https://github.com/afshinpersian/manaSlug/issues){:target="_blank"}
-* [Pull Requests](https://github.com/afshinpersian/manaSlug/pulls){:target="_blank"}
+* [Issues](https://github.com/afshinpersian/manaSlug/issues)
+* [Pull Requests](https://github.com/afshinpersian/manaSlug/pulls)
 
 ## Author
 Afshin Akhgar , afshin@akhgar.net
-> [akhgar.net](http://akhgar.net){:target="_blank"}
+> [akhgar.net](http://akhgar.net)
 
 ## License
 The source files are distributed under the The MIT License (MIT).
