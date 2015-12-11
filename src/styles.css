@@ -1,5 +1,9 @@
 h1,h2,h3,h4{
 	margin: 0px;
+	font-family:Pacifico
+}
+h1{
+	font-family:Pacifico
 }
 body,u,html,p,li{
 	margin: 0px ; padding: 0px;
@@ -13,14 +17,18 @@ body,u,html,p,li{
 
 .manaSlug__header{
 	background-color: #F26748;
+	font-family:Pacifico;
 }
 .manaSlug__header-title{
 	padding: 30px;
 	text-align: center;
 	/*color: #*/
+	font-family:Pacifico
 }
 .desc {
-	padding: 20px 5px;	
+	padding: 20px 5px;
+	font-family:Rokkitt;
+	font-size:24px	
 
 }
 .demo{
@@ -34,6 +42,7 @@ background-color:#000;
 color: #ffffff;
 display: block;text-align: left;
 padding: 5px 0px;
+  font-size: 11px;
 }
 
 input{
