@@ -1,9 +1,9 @@
 (function ( $ ) {
 
     $.fn.slug = function(options) {
-
         var settings = $.extend({
-            slug_color: "green"
+            slug_color: "green",
+            input_name : "slug"
         }, options );
 
         function string_to_slug(str) {
@@ -30,7 +30,7 @@
         $('<input />', {
             'id':'slug-hidden',
             'type':'hidden',
-            'name':'slug',
+            'name' : input_name,
             'class':'slug-hidden'
         }).insertAfter(this);
 
@@ -38,7 +38,7 @@
         $( "<span id='slug-display'></span>" ).insertAfter(this);
 
         this.on('keyup',function(){
-             val = string_to_slug($(this).val());
+            val = string_to_slug($(this).val());
             $('input:hidden#slug-hidden').val(val).blur();
             //$('input:hidden#slug-hidden').attr('value',val);
 
@@ -46,8 +46,6 @@
             //$(this).val(val);
             $('#slug-display').html(val);
         });
-
-        //
 
         this.css( "color",settings.slug_color );
         return this;
