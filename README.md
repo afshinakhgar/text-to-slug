@@ -30,8 +30,8 @@ $(function(){
 
 
 # Requests or bugs?
--[Issues](https://github.com/afshinpersian/manaSlug/issues)
--[Pull Requests](https://github.com/afshinpersian/manaSlug/pulls)
+* [Issues](https://github.com/afshinpersian/manaSlug/issues)
+* [Pull Requests](https://github.com/afshinpersian/manaSlug/pulls)
 
 # Author
 Afshin Akhgar , afshin@akhgar.net
