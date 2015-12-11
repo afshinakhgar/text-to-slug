@@ -7,6 +7,11 @@
 			$(function(){
 				$('#slug_tmp').manaSlug();	
 			});
+
+
+			$(function(){
+	        	$('#slug_tmp2').manaSlug({input_name:'slug2'});
+	        });
 		</script>
 
 		<style>
@@ -29,7 +34,7 @@
 			.manaSlug__header-title{
 				padding: 30px;
 				text-align: center;
-				color: #
+				/*color: #*/
 			}
 			.desc {
 				padding: 20px 5px;	
@@ -40,6 +45,26 @@
 				border-top: 2px dashed #333;
 				padding:8px 0px;
 			}
+
+            .demo code {
+                background-color:#000;
+                color: #ffffff;
+                display: block;text-align: left;
+                padding: 5px 0px;
+            }
+		
+            input{
+                width: 100%;
+                display: block;
+                padding: 10px;
+                margin: 10px 0px;
+            }
+
+            .slug-display{
+            	background-color: #e2e2e2;
+            	display: block;
+            	padding: 20px
+            }
 		</style>
 	</head>
 	
@@ -58,12 +83,33 @@
 				<form action="send.php">
 					<input type="text" name="slug_tmp" id="slug_tmp">
 				</form>
-
-				$(function(){
-					$('#slug_tmp').manaSlug();	
-				});
+<pre>
+    <code>
+        $(function(){
+            $('#slug_tmp').manaSlug();
+        });
+    </code>
+</pre>
 
 			</div>
+
+            <!--Demo 2-->
+            <div class="demo">
+                <h3>Demo #2</h3>
+                <form action="send.php">
+                    <input type="text" name="slug_tmp2" id="slug_tmp2">
+                </form>
+<pre>
+    <code>
+        $(function(){
+        	$('#slug_tmp2').manaSlug({input_name:'slug2'});
+        });
+    </code>
+</pre>
+
+            </div>
+            <!--End Demo-->
+
 		</div>
 	</body>
 </html>
