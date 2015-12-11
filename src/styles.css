@@ -1,0 +1,50 @@
+h1,h2,h3,h4{
+	margin: 0px;
+}
+body,u,html,p,li{
+	margin: 0px ; padding: 0px;
+}
+.wrapper{
+	width: 980px;
+	margin: 0px auto;	
+	border: 1px solid #e2e2e2;
+	background-color: #80BDED;
+}
+
+.manaSlug__header{
+	background-color: #F26748;
+}
+.manaSlug__header-title{
+	padding: 30px;
+	text-align: center;
+	/*color: #*/
+}
+.desc {
+	padding: 20px 5px;	
+
+}
+.demo{
+	margin: 20px 5px;
+	border-top: 2px dashed #333;
+	padding:8px 0px;
+}
+
+.demo code {
+background-color:#000;
+color: #ffffff;
+display: block;text-align: left;
+padding: 5px 0px;
+}
+
+input{
+width: 100%;
+display: block;
+padding: 10px;
+margin: 10px 0px;
+}
+
+.slug-display{
+background-color: #e2e2e2;
+display: block;
+padding: 20px
+}
