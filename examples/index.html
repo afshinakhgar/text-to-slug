@@ -13,15 +13,24 @@
 		<link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="../src/styles.css">
 		<script>
-
+    /*Easy Start!*/
 			$(function(){
 				$('#slug_tmp').manaSlug();	
 			});
-
+      /*Change Input Name*/
 			$(function(){
 	        	$('#slug_tmp2').manaSlug({input_name:'slug2'});
-	        });
-	        
+      });
+
+      /*Change Color*/
+      $(function(){
+          $('#slug_tmp3').manaSlug({slug_color:'#DD094C'});
+      });
+
+      /*change Separator*/
+      $(function(){
+          $('#slug_tmp4').manaSlug({separator:'#'});
+        });
 		</script>
 		<style>
 	.ribbon {
@@ -56,6 +65,10 @@
   text-shadow: 0 0 5px #444;
 }
 
+div.hint{
+      font-size: 21px;
+    font-family: Rokkitt;
+}
 </style>
 		
 	</head>
@@ -105,8 +118,9 @@
 
 
 			<div class="demo">
-				<h3>Demo #1</h3>
+				<h3>Demo #1 - Easy Start!</h3>
 				<form action="send.php">
+           &lt;input type="text" name="slug_tmp" id="slug_tmp"&gt;
 					<input type="text" name="slug_tmp" id="slug_tmp">
 				</form>
 <pre>
@@ -121,8 +135,9 @@
 
             <!--Demo 2-->
             <div class="demo">
-                <h3>Demo #2</h3>
+                <h3>Demo #2 - Change hidden input name</h3>
                 <form action="send.php">
+                 &lt;input type="text" name="slug_tmp2" id="slug_tmp2"&gt;
                     <input type="text" name="slug_tmp2" id="slug_tmp2">
                 </form>
 <pre>
@@ -135,6 +150,50 @@
 
             </div>
             <!--End Demo-->
+
+
+
+<!--Demo 2-->
+            <div class="demo">
+                <h3>Demo #3 - Change Input Color</h3>
+                <form action="send.php">
+                     &lt;input type="text" name="slug_tmp3" id="slug_tmp3"&gt;
+                    <input type="text" name="slug_tmp3" id="slug_tmp3">
+                </form>
+<pre>
+    <code>
+        $(function(){
+          $('#slug_tmp3').manaSlug({slug_color:'#DD094C'});
+        });
+    </code>
+</pre>
+
+            </div>
+            <!--End Demo-->
+
+
+
+            <!--Demo 2-->
+            <div class="demo">
+                <h3>Demo #3 - Change Separator</h3>
+                <div class="hint">mana Slug Plugin uses hyphen (dash) as separator in output . You can Change It Now !</div>
+                <div class="hint">For Example separate charachters with "#" instead of "-" </div>
+                <form action="send.php">
+                     &lt;input type="text" name="slug_tmp4" id="slug_tmp4"&gt;
+                    <input type="text" name="slug_tmp4" id="slug_tmp4">
+                </form>
+<pre>
+    <code>
+        $(function(){
+          $('#slug_tmp4').manaSlug({separator:'#'});
+        });
+    </code>
+</pre>
+
+            </div>
+            <!--End Demo-->
+
+
 
 		</div>
 	</body>

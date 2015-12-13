@@ -4,7 +4,8 @@
         var settings = $.extend({
             slug_color: "#4E8451",
             input_name : "slug",
-            output_format : "form"
+            output_format : "form",
+            separator : '-' 
         }, options );
 
         function string_to_slug(str) {
@@ -20,8 +21,8 @@
             var fixpersian = 'ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع ق ف ق ک گ ل م ن و ه ی';
 
             str = str.replace(/[^a-z0-9 -][fixpersian]/g, '') // remove invalid chars
-                .replace(/\s+/g, '-') // collapse whitespace and replace by -
-                .replace(/-+/g, '-'); // collapse dashes
+                .replace(/\s+/g, settings.separator) // collapse whitespace and replace by separator (default : -)
+                .replace('/'+settings.seperator+'+/g', settings.separator); // collapse separator (#dashes)
 
             return str;
         }
