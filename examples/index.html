@@ -1,11 +1,11 @@
 <html>
 	<head>
-		<title>ManaSlug</title>
-		<meta name="description" content="jquery plugin for making slugable input in a form">
-		<meta name="keywords" content="slug,slugable,sluggable,slugger,sluggify,slugify,search,url,url friendly">
+		<title>Text to Slug (text2slug)</title>
+		<meta name="description" content="text-to-slug,jquery plugin for making slugable input in a form">
+		<meta name="keywords" content="text-to-slug,text 2 slug,slug,slugable,sluggable,slugger,sluggify,slugify,search,url,url friendly">
 		<meta name="author" content="Afshin AKhgar	">
 		<script src="../src/jquery.min.js"></script>
-		<script src="../src/manaSlug.min.js"></script>
+		<script src="../src/text2slug.min.js"></script>
 
 
 		<!-- Web Fonts Google -->
@@ -15,21 +15,21 @@
 		<script>
     /*Easy Start!*/
 			$(function(){
-				$('#slug_tmp').manaSlug();	
+				$('#slug_tmp').text2slug();	
 			});
       /*Change Input Name*/
 			$(function(){
-	        	$('#slug_tmp2').manaSlug({input_name:'slug2'});
+	        	$('#slug_tmp2').text2slug({input_name:'slug2'});
       });
 
       /*Change Color*/
       $(function(){
-          $('#slug_tmp3').manaSlug({slug_color:'#DD094C'});
+          $('#slug_tmp3').text2slug({slug_color:'#DD094C'});
       });
 
       /*change Separator*/
       $(function(){
-          $('#slug_tmp4').manaSlug({separator:'#'});
+          $('#slug_tmp4').text2slug({separator:'#'});
         });
 		</script>
 		<style>
@@ -76,17 +76,17 @@ div.hint{
 	<body>
 
 		<div class="ribbon">
-		  	<a href="https://github.com/afshinpersian/manaSlug">Fork me on GitHub</a>
+		  	<a href="https://github.com/afshinpersian/text-to-slug">Fork me on GitHub</a>
 		</div>
 
 
 		<div class="wrapper">
 			<header class="manaSlug__header">
-				<h1 class="manaSlug__header-title">ManaSlug</h1>
+				<h1 class="manaSlug__header-title">Text to Slug</h1>
 			</header>
 
 			<div class="desc">
-				<b>manaSlug</b>  is a neat and small jquery plugin for making slugable input in a form
+				<b>Text to Slug</b>  is a neat and small jquery plugin for making slugable input in a form
 			</div>
 			<br>
 			<br>
@@ -101,7 +101,7 @@ div.hint{
 
                 </div>
                 <div>
-                    Add jquery and mana slug js to document
+                    Add jquery and Text to slug js to document
                 </div>
 
 
@@ -109,7 +109,7 @@ div.hint{
     <code>
         &lt;script src="src/jquery.min.js"&gt;&lt;/script&gt;
         <br/>
-        &lt;script src="src/manaSlug.js"&gt;&lt;/script&gt;
+        &lt;script src="src/text2slug.js"&gt;&lt;/script&gt;
     </code>
     </pre>
 
@@ -126,7 +126,7 @@ div.hint{
 <pre>
     <code>
         $(function(){
-            $('#slug_tmp').manaSlug();
+            $('#slug_tmp').text2slug();
         });
     </code>
 </pre>
@@ -143,7 +143,7 @@ div.hint{
 <pre>
     <code>
         $(function(){
-        	$('#slug_tmp2').manaSlug({input_name:'slug2'});
+        	$('#slug_tmp2').text2slug({input_name:'slug2'});
         });
     </code>
 </pre>
@@ -163,7 +163,7 @@ div.hint{
 <pre>
     <code>
         $(function(){
-          $('#slug_tmp3').manaSlug({slug_color:'#DD094C'});
+          $('#slug_tmp3').text2slug({slug_color:'#DD094C'});
         });
     </code>
 </pre>
@@ -176,7 +176,7 @@ div.hint{
             <!--Demo 2-->
             <div class="demo">
                 <h3>Demo #3 - Change Separator</h3>
-                <div class="hint">mana Slug Plugin uses hyphen (dash) as separator in output . You can Change It Now !</div>
+                <div class="hint">text to Slug Plugin uses hyphen (dash) as separator in output . You can Change It Now !</div>
                 <div class="hint">For Example separate charachters with "#" instead of "-" </div>
                 <form action="send.php">
                      &lt;input type="text" name="slug_tmp4" id="slug_tmp4"&gt;
@@ -185,7 +185,7 @@ div.hint{
 <pre>
     <code>
         $(function(){
-          $('#slug_tmp4').manaSlug({separator:'#'});
+          $('#slug_tmp4').text2slug({separator:'#'});
         });
     </code>
 </pre>

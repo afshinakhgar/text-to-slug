@@ -1,6 +1,5 @@
 (function ( $ ) {
-
-    $.fn.manaSlug = function(options) {
+    $.fn.text2slug = function(options) {
         var settings = $.extend({
             slug_color: "#4E8451",
             input_name : "slug",
