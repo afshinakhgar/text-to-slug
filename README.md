@@ -1,43 +1,43 @@
-# manaSlug
-manaSlug is a neat and small jquery plugin for making slugable input in a form
-> manaSlug Plugin is less than ~1kb
-* manaSlug generate slug from unicode string, URL-friendly slugify with multiple languages support.
+# Text2Slug
+Text2Slug is a neat and small jquery plugin for making slugable input in a form
+> Text2Slug Plugin is less than ~1kb
+* Text2Slug generate slug from unicode string, URL-friendly slugify with multiple languages support.
 
 
 
 ## Install
 > Requires : JQuery
-* First download package manaSlug.js or manaSlug.min.js 
-* Then put Jquery and manaSlug.js file into your html Head
+* First download package text-to-slug.js or text-to-slug.min.js 
+* Then put Jquery and text-to-slug.js file into your html Head
 * use plug in 
 * Also You can see examples in examples folder
-> Add jquery and mana slug js to document
+> Add jquery and text-to-slug slug js to document
 > 
 
 
 >
 >
 ### live Demo
-> [Live Demo](http://akhgar.net/demo/manaslug/index.html)
+> [Live Demo](http://akhgar.net/demo/text-to-slug/index.html)
 
 ```
 <script src="src/jquery.min.js"></script>
-<script src="src/manaSlug.js"></script>
+<script src="src/text-to-slug.js"></script>
 ```
 
 `<input type="text" id="slug_tmp2" name="slug_tmp2" >`
 ```
 <script>
 $(function(){
-        $('#slug_tmp2').manaSlug({input_name:'slug2'});
+        $('#slug_tmp2').text2slug({input_name:'slug2'});
 });
 </script>
 ```
 
 
 ## Requests or bugs?
-* [Issues](https://github.com/afshinpersian/manaSlug/issues)
-* [Pull Requests](https://github.com/afshinpersian/manaSlug/pulls)
+* [Issues](https://github.com/afshinpersian/text-to-slug/issues)
+* [Pull Requests](https://github.com/afshinpersian/text-to-slug/pulls)
 
 ## Author
 Afshin Akhgar , afshin@akhgar.net
