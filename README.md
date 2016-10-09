@@ -18,7 +18,7 @@ Text2Slug is a neat and small jquery plugin for making slugable input in a form
 >
 >
 ### live Demo
-> [Live Demo](http://akhgar.net/demo/text-to-slug/index.html)
+> [Live Demo](http://akhgar.net/demo/examples/)
 
 ```
 <script src="src/jquery.min.js"></script>
