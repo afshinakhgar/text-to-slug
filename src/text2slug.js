@@ -5,27 +5,28 @@
             input_name : "slug",
             output_format : "form",
             separator : '-',
-            specialchars : {}
+            urf : false
         }, options );
 
         function string_to_slug(str) {
             str = str.replace(/^\s+|\s+$/g, ''); // trim
             str = str.toLowerCase();
-            console.log(str);
             // remove accents, swap ñ for n, etc
             var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
             var to   = "aaaaeeeeiiiioooouuuunc------";
             for (var i=0, l=from.length ; i<l ; i++) {
                 str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
-                console.log(str)
             }
-            var fixpersian = 'ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع ق ف ق ک گ ل م ن و ه ی';
-
             // fix special charachters
             str = str.replace(/[\^!@&\/\\#,+()$~%.'":*?<>{}]/g,'');
-
-            str = str.replace(/[^a-z0-9 -]/g, '').replace(/[^a-z0-9 -][fixpersian]/g, '') // remove invalid chars
-                .replace(/\s+/g, settings.separator) // collapse whitespace and replace by separator (default : -)
+            var fixpersian = '';
+            if(settings.utf == true){
+                var fixpersian = 'ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع ق ف ق ک گ ل م ن و ه ی';
+                str = str.replace(/[^a-z0-9 -][fixpersian]/g, '');
+            }else{
+                str = str.replace(/[^a-z0-9 -]/g, '')// remove invalid chars
+            }
+            str = str.replace(/\s+/g, settings.separator) // collapse whitespace and replace by separator (default : -)
                 .replace('/'+settings.seperator+'+/g', settings.separator); // collapse separator (#dashes)
 
             return str;
