@@ -59,7 +59,7 @@
             $( "<span id='slug-display"+rand+"' class='slug-display'></span>" ).insertAfter(this);
             setVal($(this));
 
-        }else if(settings.output_format == 'form'){
+        }else if(settings.output_format == 'val'){
             setVal($(this));
 
             return val;
