@@ -46,3 +46,19 @@ Afshin Akhgar , afshin@akhgar.net
 ## License
 The source files are distributed under the The MIT License (MIT).
 
+## Awards And Nominees
+![Innovation award](http://files.jsclasses.org/graphics/jsclasses/innovation-award-logo.png "Innovation award")
+- Innovation award nominee in jsClasses.org site
+
+
+
+Slug is the part of a URL that is often used to include in the pages' URLs the respective titles to make it easy for users to learn what the pages are about looking just at their URLs.
+
+Not all characters can be included in URLs. For instance spaces and other characters need to be encoded in a special way, so they are not easily readable by the users.
+
+This object can take a text of a title and create the slug by replacing characters that would need to be encoded, by using dashes.
+
+Manuel Lemos
+
+
+
