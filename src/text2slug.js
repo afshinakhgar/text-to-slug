@@ -22,9 +22,9 @@
                 }
             }
 
-            // str = str.replace(/^\s+|\s+$/g, ''); // trim
+            str = str.replace(/^\s+|\s+$/g, ''); // trim
             // fix special charachters
-            // str = str.replace(/[\^!@&\/\\#,+()$~%.'":*?<>{}]/g,'');
+            str = str.replace(/[\^!@&\/\\#,+()$~%.'":*?<>{}]/g,'');
             var fixpersian = '';
             // if(settings.utf == true){
             //     var fixpersian = 'ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع ق ف ق ک گ ل م ن و ه ی';
@@ -34,7 +34,7 @@
             // }
 
             str = str.toLowerCase()
-            .replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+            .replace(/[^a-z0-9 -]/g, '')// remove invalid chars
             .replace(/\s+/g, settings.separator) // collapse whitespace and replace by separator (default : -)
             .replace('/'+settings.seperator+'+/g', settings.separator) // collapse separator (#dashes)
             .replace(new RegExp('^' + settings.separator + '+'), '') // Strip sepperator from  the beginning
