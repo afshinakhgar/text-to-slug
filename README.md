@@ -46,11 +46,7 @@ Afshin Akhgar , afshin@akhgar.net
 ## License
 The source files are distributed under the The MIT License (MIT).
 
-## Awards And Nominees
-![Innovation award](http://files.jsclasses.org/graphics/jsclasses/innovation-award-logo.png "Innovation award")
-- Innovation award nominee in jsClasses.org site
-
-
+## About
 
 Slug is the part of a URL that is often used to include in the pages' URLs the respective titles to make it easy for users to learn what the pages are about looking just at their URLs.
 
