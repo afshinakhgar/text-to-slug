@@ -6,7 +6,9 @@
             output_format : "form",
             separator : '-',
             escape : true,
-            utf : true
+            utf : true,
+            preview_text : '',
+            max_char:128
         }, options );
 
 
@@ -50,13 +52,20 @@
         function setVal(obj)
         {
             val = string_to_slug(obj.val());
+
+            if(obj.val().length >settings.max_char){
+                return;
+            }
+
             $('input:hidden#slug-hidden').val(val).blur();
             //$('input:hidden#slug-hidden').attr('value',val);
             //$(this).val(val);
             if(obj.val().length >0){
                 $('#slug-display'+rand).show();
+                $('#slug-preview_text'+rand).show();
             }else{
                 $('#slug-display'+rand).hide();
+                $('#slug-preview_text'+rand).hide();
             }
             $('#slug-display'+rand).html(val);
         }
@@ -74,9 +83,11 @@
                 'name' : settings.input_name,
                 'class':'slug-hidden'
             }).insertAfter(this);
-
-
-           $( "<span id='slug-display"+rand+"' class='slug-display' style='display: none'></span>" ).insertAfter(this);
+            var preview_text = '';
+            if(settings.preview_text != ''){
+                preview_text =  "<span id='slug-preview_text"+rand+"' class='slug-preview_text' style='display: none;'>"+settings.preview_text+"</span>";
+            }
+            $('<div style="position: relative;" class="slug-preview-wrapper">'+preview_text + "<span id='slug-display"+rand+"' class='slug-display' style='display: none'></span></div>" ).insertAfter(this);
             setVal($(this));
 
         }else if(settings.output_format == 'val'){
