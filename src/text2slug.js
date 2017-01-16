@@ -53,6 +53,11 @@
             $('input:hidden#slug-hidden').val(val).blur();
             //$('input:hidden#slug-hidden').attr('value',val);
             //$(this).val(val);
+            if(obj.val().length >0){
+                $('#slug-display'+rand).show();
+            }else{
+                $('#slug-display'+rand).hide();
+            }
             $('#slug-display'+rand).html(val);
         }
 
@@ -69,7 +74,9 @@
                 'name' : settings.input_name,
                 'class':'slug-hidden'
             }).insertAfter(this);
-            $( "<span id='slug-display"+rand+"' class='slug-display'></span>" ).insertAfter(this);
+
+
+           $( "<span id='slug-display"+rand+"' class='slug-display' style='display: none'></span>" ).insertAfter(this);
             setVal($(this));
 
         }else if(settings.output_format == 'val'){
